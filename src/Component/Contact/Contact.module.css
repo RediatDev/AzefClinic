@@ -1,0 +1,241 @@
+.contact {
+  padding: 0rem 0 8rem;
+  background: #f9fafb;
+}
+.forLocation{
+  width:30px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  max-width: 42rem;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.layout {
+  display: grid;
+  gap: 3rem;
+}
+
+.formCard {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.75rem;
+  padding: 2rem;
+    border-color: #1a9b9b;
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.formDescription {
+  font-size: 0.9375rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #1a9b9b;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.submitButton {
+  width: 100%;
+  background: #1a9b9b;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submitButton:hover {
+  background: #158080;
+}
+
+.infoCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+    border-color: #1a9b9b;
+}
+
+.infoCard {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+    border-color: #1a9b9b;
+}
+
+.infoIcon {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: rgba(26, 155, 155, 0.1);
+  font-size: 1.25rem;
+}
+
+.infoTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.infoText {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.infoText p {
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .formRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    padding: 8rem 0 10rem;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+/* Adding fade-in animations for scroll effects */
+.fadeOut {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fadeIn {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fadeIn .infoCard {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.fadeIn .infoCard:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.fadeIn .infoCard:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.fadeIn .infoCard:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.fadeIn .infoCard:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

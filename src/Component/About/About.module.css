@@ -1,0 +1,136 @@
+.about {
+  padding: 2rem 0 8rem;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.layout {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.content {
+  max-width: 100%;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.description {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+    border-color: #1a9b9b;
+}
+
+.iconWrapper {
+  display: inline-flex;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: rgba(114, 211, 134, 0.2);
+  margin-bottom: 0.75rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding: 8rem 0 10rem;
+  }
+
+  .layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+/* Adding fade-in animations for scroll effects */
+.fadeOut {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fadeIn {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fadeIn .card {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
