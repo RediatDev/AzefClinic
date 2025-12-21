@@ -175,7 +175,7 @@ const Jobs = () => {
               <div key={job.id} className={styles.card}>
                 <div className={styles.cardHeader}>
                   <h2>{job.title}</h2>
-                  <span className={styles.type}>{job.type}</span>
+                  {/* <span className={styles.type}>{job.type}</span> */}
                 </div>
 
                 <p className={styles.summary}>{job.summary}</p>
