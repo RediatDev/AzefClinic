@@ -22,7 +22,7 @@ function Header() {
             <Link to="/#about">About</Link>
             <Link to="/#contact">Contact</Link>
             <Link to="/jobs">Careers</Link>
-            <Link className={styles.ctaButton} to="#contact">
+            <Link  className={styles.ctaButton} to="/#contact">
               Book Appointment
             </Link>
           </nav>
