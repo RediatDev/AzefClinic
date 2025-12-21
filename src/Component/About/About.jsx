@@ -1,24 +1,29 @@
 import { useScrollAnimation } from "../../hooks/useScrollAnimation"
 import styles from "./About.module.css"
+import { GrCertificate } from "react-icons/gr";
+import { FaUserGroup } from "react-icons/fa6";
+import { IoIosAlarm } from "react-icons/io";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
+
 
 const features = [
   {
-    icon: "🏆",
+    icon: GrCertificate ,
     title: "Board Certified",
     description: "Our physicians are board-certified in internal medicine with years of experience",
   },
   {
-    icon: "👥",
+    icon: FaUserGroup,
     title: "Patient-Centered",
     description: "We prioritize building lasting relationships with our patients",
   },
   {
-    icon: "⏰",
+    icon: IoIosAlarm,
     title: "Timely Care",
     description: "Same-day appointments available for urgent medical needs",
   },
   {
-    icon: "🛡️",
+    icon: VscWorkspaceTrusted,
     title: "Trusted Practice",
     description: "Serving the community with integrity and excellence",
   },
@@ -49,7 +54,8 @@ function About() {
             {features.map((feature, index) => (
               <div key={index} className={styles.card} style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className={styles.iconWrapper}>
-                  <span className={styles.icon}>{feature.icon}</span>
+                  {/* <span className={styles.icon}>{feature.icon}</span> */}
+                          <feature.icon size={30} color="#158080" />
                 </div>
                 <h3 className={styles.cardTitle}>{feature.title}</h3>
                 <p className={styles.cardDescription}>{feature.description}</p>
