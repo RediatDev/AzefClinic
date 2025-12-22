@@ -14,7 +14,7 @@ function Contact() {
 
   return (
     <section id="contact" className={styles.contact}>
-      <div className={styles.container}>
+      <div id="contact2" className={styles.container}>
         <div ref={headerRef} className={`${styles.header} ${headerVisible ? styles.fadeIn : styles.fadeOut}`}>
           <h2 className={styles.title}>Get in Touch</h2>
           <p className={styles.description}>Ready to take the next step in your healthcare journey? Contact us today</p>

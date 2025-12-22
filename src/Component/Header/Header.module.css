@@ -61,6 +61,27 @@
   color:white !important;
 }
 
+
+.ctaButtonM {
+  background: #1a9b9b;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: block;
+  text-align: center;
+  width: 300px;
+}
+.ctaButtonM:hover {
+  background: #158080;
+  color:white !important;
+}
+
+
 .desktopNav {
   display: none;
 }

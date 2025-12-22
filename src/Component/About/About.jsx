@@ -35,7 +35,7 @@ function About() {
 
   return (
     <section id="about" className={styles.about}>
-      <div className={styles.container}>
+      <div id="learnMore"  className={styles.container}>
         <div className={styles.layout}>
           <div ref={contentRef} className={`${styles.content} ${contentVisible ? styles.fadeIn : styles.fadeOut}`}>
             <h2 className={styles.title}>Why Choose Azef Internal Medicine?</h2>

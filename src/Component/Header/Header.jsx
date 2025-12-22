@@ -38,19 +38,22 @@ function Header() {
 
         {mobileMenuOpen && (
           <nav className={styles.mobileNav}>
-            <a href="#home" onClick={() => setMobileMenuOpen(false)}>
+            <Link to="/#home" onClick={() => setMobileMenuOpen(false)}>
               Home
-            </a>
-            <a href="#services" onClick={() => setMobileMenuOpen(false)}>
+            </Link>
+            <Link to="/#services" onClick={() => setMobileMenuOpen(false)}>
               Services
-            </a>
-            <a href="#about" onClick={() => setMobileMenuOpen(false)}>
+            </Link>
+            <Link to="/#about" onClick={() => setMobileMenuOpen(false)}>
               About
-            </a>
-            <a href="#contact" onClick={() => setMobileMenuOpen(false)}>
+            </Link>
+            <Link to="/#contact" onClick={() => setMobileMenuOpen(false)}>
               Contact
-            </a>
-            <button className={styles.ctaButton}>Book Appointment</button>
+            </Link>
+            <Link to="/jobs" onClick={() => setMobileMenuOpen(false)}>
+              Careers
+            </Link>
+            <Link to="/#contact" className={styles.ctaButtonM}>Book Appointment</Link>
           </nav>
         )}
       </div>
