@@ -2,7 +2,7 @@ import { useScrollAnimation } from "../../hooks/useScrollAnimation"
 import styles from "./Contact.module.css"
 
 import telegram from '../../assets/telegram.png'
-import location from '../../assets/location.png'
+import location2 from '../../assets/location2.png'
 import email from '../../assets/email.png'
 import clock from '../../assets/clock.png'
 
@@ -62,7 +62,7 @@ function Contact() {
 
           <div ref={infoRef} className={`${styles.infoCards} ${infoVisible ? styles.fadeIn : styles.fadeOut}`}>
             <div className={styles.infoCard}>
-              <div className={styles.infoIcon}><img className={styles.forLocation} src={location} alt="" /></div>
+              <div className={styles.infoIcon}><img className={styles.forLocation} src={location2} alt="" /></div>
               <div>
                 <h3 className={styles.infoTitle}>Location</h3>
                 <p className={styles.infoText}>
