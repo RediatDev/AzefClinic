@@ -1,0 +1,282 @@
+/* .services {
+  background: #f9fafb;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  max-width: 42rem;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #1a9b9b;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+  color: #444;
+  margin: 2%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.infoCard {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.75rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.infoCard:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+}
+
+.iconWrapper {
+  display: inline-flex;
+  padding: 0.9rem;
+  border-radius: 0.6rem;
+  background: rgba(26, 155, 155, 0.1);
+  margin-bottom: 1rem;
+}
+
+.infoCard h3 {
+  margin: 1rem 0 0.75rem;
+  color: #1a1a1a;
+  font-size: 1.25rem;
+}
+
+.infoCard p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+} */
+
+/* Animations */
+/* .fadeOut {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fadeIn {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+/* Responsive */
+/* @media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 3rem;
+  }
+} */
+
+.services {
+  background: #f9fafb;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  max-width: 42rem;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.forDisplay {
+  display: flex;
+  gap: 2%;
+  margin:  0 auto;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #1a9b9b;
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  color: #444;
+  width: 500px;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.list,
+.subList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.subList li {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2%;
+}
+
+
+
+.infoCard {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.infoCard h4 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+}
+
+.infoCard p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.footerNote {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Animations */
+.fadeOut {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fadeIn {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 3rem;
+  }
+}

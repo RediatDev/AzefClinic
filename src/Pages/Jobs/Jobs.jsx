@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "./Jobs.module.css";
 import jobs from "./jobsData";
 import { Search, MapPin, Clock, Briefcase } from "lucide-react";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation"
+
 
 const Jobs = () => {
   const [search, setSearch] = useState("");
@@ -10,6 +12,8 @@ const Jobs = () => {
   // 🔹 Modal state
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
+
+    const [contentRef, contentVisible] = useScrollAnimation({ once: true })
 
   const filteredJobs = jobs.filter((job) => {
     const matchSearch = job.title.toLowerCase().includes(search.toLowerCase());
@@ -29,7 +33,7 @@ const Jobs = () => {
 
   return (
     <>
-      <div className={styles.page}>
+      <div ref={contentRef} className={ `${styles.page} ${styles.content} ${contentVisible ? styles.fadeIn : styles.fadeOut}`}>
         <div className={styles.container}>
           {/* Sidebar */}
           <aside className={styles.sidebar}>

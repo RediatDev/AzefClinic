@@ -18,8 +18,10 @@ function Header() {
 
           <nav className={`${styles.nav} ${styles.desktopNav}`}>
             <Link to="/#home">Home</Link>
-            <Link to="/#services">Services</Link>
-            <Link to="/#about">About</Link>
+            {/* <Link to="/#services">Services</Link> */}
+            <Link to="/services">Services</Link>
+            <Link to="/about">About</Link>
+            {/* <Link to="/#about">About</Link> */}
             <Link to="/#contact">Contact</Link>
             <Link to="/jobs">Careers</Link>
             <Link  className={styles.ctaButton} to="/#contact">
@@ -41,12 +43,18 @@ function Header() {
             <Link to="/#home" onClick={() => setMobileMenuOpen(false)}>
               Home
             </Link>
-            <Link to="/#services" onClick={() => setMobileMenuOpen(false)}>
+            <Link to="/services" onClick={() => setMobileMenuOpen(false)}>
               Services
             </Link>
-            <Link to="/#about" onClick={() => setMobileMenuOpen(false)}>
+            {/* <Link to="/#services" onClick={() => setMobileMenuOpen(false)}>
+              Services
+            </Link> */}
+            <Link to="/about" onClick={() => setMobileMenuOpen(false)}>
               About
             </Link>
+            {/* <Link to="/#about" onClick={() => setMobileMenuOpen(false)}>
+              About
+            </Link> */}
             <Link to="/#contact" onClick={() => setMobileMenuOpen(false)}>
               Contact
             </Link>

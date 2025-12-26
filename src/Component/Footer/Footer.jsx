@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css"
 import logo from '../../assets/logo.png'
+import QR from '../../assets/location.png'
 function Footer() {
   return (
     <footer className={styles.footer}>
@@ -33,9 +34,9 @@ function Footer() {
             </ul>
           </div>
 
-          {/* <div>
-            <h3 className={styles.heading}>Legal</h3>
-            <ul className={styles.list}>
+          <div  >
+            <h3 className={styles.heading}>Scan for location</h3>
+            {/* <ul className={styles.list}>
               <li>
                 <a href="#">Privacy Policy</a>
               </li>
@@ -45,8 +46,10 @@ function Footer() {
               <li>
                 <a href="#">HIPAA Notice</a>
               </li>
-            </ul>
-          </div> */}
+            </ul> */}
+            <img className={styles.QR}  src={QR} alt="" />
+
+          </div>
           
         </div>
 

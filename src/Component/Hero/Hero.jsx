@@ -11,7 +11,7 @@ function Hero() {
 
   let handleClickLearn = (e) => {
     e.preventDefault();
-    navigate("/#learnMore");
+    navigate("/About");
   };
 
   return (
@@ -20,15 +20,28 @@ function Hero() {
         <div className={styles.content}>
           <h1 className={styles.title}>Your Partner in Health and Wellness</h1>
           <p className={styles.description}>
-            Azef Internal Medicine Speciality Clinic provides comprehensive,
+            {/* Azef Internal Medicine Speciality Clinic provides comprehensive,
             compassionate care for adults. Our experienced team is dedicated to
-            your long-term health and well-being.
+            your long-term health and well-being. */}
+            Azef Internal Medicine Specialty Clinic is a patient-centered
+            healthcare facility committed to delivering high-quality, timely,
+            and modern medical services in accordance with Ethiopian Ministry of
+            Health (MoH) standards. At Azef, we combine compassionate care,
+            servanthood leadership, and evidence-based medicine to serve
+            individuals, families, and the wider community. Suggested Visuals:
+            Ethiopian patients, modern clinic environment, Addis Ababa city
+            landscape.
           </p>
           <div className={styles.buttons}>
             <button onClick={handleClick} className={styles.primaryButton}>
-              Schedule a Visit
+              Book Appointment | ቀጠሮ ይያዙ
             </button>
-            <button onClick={handleClickLearn} className={styles.secondaryButton}>Learn More</button>
+            <button
+              onClick={handleClickLearn}
+              className={styles.secondaryButton}
+            >
+              Learn More
+            </button>
           </div>
 
           <div className={styles.iconContainer}>

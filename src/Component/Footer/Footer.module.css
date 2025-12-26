@@ -15,7 +15,10 @@
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-
+.QR{
+  width: 100px;
+  height: 100px;
+}
 .logo {
   height: 2.5rem;
   width: auto;

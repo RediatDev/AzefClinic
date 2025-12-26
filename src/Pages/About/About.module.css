@@ -1,0 +1,299 @@
+/* .about {
+  background: #f9fafb;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  max-width: 42rem;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #1a9b9b;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  line-height: 1.7;
+  color: #444;
+  margin: 2%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2%;
+}
+
+.infoCard {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.infoCard:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.infoCard h3 {
+  margin: 1rem 0 0.5rem;
+  color: #1a1a1a;
+  font-size: 1.25rem;
+}
+
+.infoCard p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+} */
+
+/* Animations */
+/* .fadeOut {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fadeIn {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+/* Responsive */
+/* @media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 3rem;
+  }
+} */
+:root {
+  --primary-color: #158080;
+  --dark-text: #1a1a1a;
+  --gray-text: #666;
+  --light-gray: #f9fafb;
+  --white: #ffffff;
+  --border-light: #e5e5e5;
+  --border-primary: #1a9b9b;
+  --border-radius: 0.75rem;
+  --transition-speed: 0.3s;
+}
+
+/* Main Section */
+.about {
+  background: var(--light-gray);
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.header {
+  max-width: 42rem;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: var(--gray-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Added wrapper for description cards to handle responsive layout */
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.standColor{
+  color: #158080;
+}
+
+/* Card Styling */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  line-height: 1.7;
+  color: var(--gray-text);
+}
+.centerImage{
+  text-align: center;
+}
+.card p {
+  margin: 0 0 1rem 0;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Info Card Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Info Card (Mission/Vision/Values) */
+.infoCard {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  text-align: center;
+  transition: all var(--transition-speed) ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoCard:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+}
+
+/* Icon wrapper for consistent icon styling and color */
+.iconWrapper {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoCard h3 {
+  margin: 0 0 0.75rem 0;
+  color: var(--dark-text);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.infoCard p {
+  font-size: 0.95rem;
+  color: var(--gray-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Animations */
+.fadeOut {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fadeIn {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+
+  /* Two-column layout for description cards on tablet */
+  .descriptionWrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 3rem;
+  }
+}
